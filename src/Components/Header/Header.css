@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  padding: 10px;
+}
+
+.header__logo {
+  height: 50px;
+  padding: 0px 50px 0px 0px;
+  border-right: 1px solid lightgray;
+}
+
+.header__logo img {
+  height: inherit;
+}
