@@ -1,16 +1,87 @@
 .header {
   display: flex;
   justify-content: space-between;
-  height: 75px;
-  padding: 10px;
+  height: max-content;
+  padding: 0px 10px;
+  background-color: white;
+}
+
+.header__container {
+  padding: 10px 0px;
+}
+
+.header__container:nth-child(1) {
+  flex: 0.15;
+  border-right: 1px solid lightgray;
+}
+.header__container:nth-child(2) {
+  flex: 0.5;
+}
+.header__container:nth-child(3) {
+  flex: 0.25;
 }
 
 .header__logo {
   height: 50px;
-  padding: 0px 50px 0px 0px;
-  border-right: 1px solid lightgray;
+  padding: 0px 3em 0px 15px;
 }
 
 .header__logo img {
   height: inherit;
+}
+
+.header__vl {
+  border-left: 1px solid lightgray;
+  height: inherit;
+}
+
+.header__search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f6fa;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 25px;
+  padding: 15px;
+  color: gray;
+}
+
+.header__search svg {
+  margin-right: 5px;
+}
+
+.header__search input {
+  width: 80%;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: black;
+}
+
+.header__nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav-items .bell__svg {
+  stroke: #8a8989;
+}
+
+.header__nav-items .nav-item {
+  height: 45px;
+  margin: 0px auto;
+}
+.header__nav-items .nav-item .noti__svg,
+.header__nav-items .nav-item .chat__svg {
+  width: 32px;
+  /* height: 32px; */
+}
+
+.header__nav-items__avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
