@@ -1,0 +1,26 @@
+.sidepanel {
+    height: 100%;
+    width: 14.2rem;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 6rem;
+    transition: 0.5s;
+  }
+  .sidepanel .sidepanel__link{
+    padding: .7rem 1.5rem;
+    display: block;
+    text-decoration: none;
+    color: rgb(179,179,179);
+    font-size: 1rem;
+  }
+  .sidepanel .sidepanel__link:first-child{
+    background-color: rgb(254,250,239);
+    color: rgb(135,183,158);
+  }
+  .sidepanel__link__icon{
+    padding: 10px;
+  }
