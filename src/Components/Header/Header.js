@@ -1,11 +1,14 @@
 import React from "react";
 import "./Header.css";
 import Logo from "../../Assets/tmm__logo.png";
-import SearchIcon from "@material-ui/icons/Search";
-import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
-import ForumIcon from "@material-ui/icons/Forum";
+import {
+  ExpandMore,
+  Forum,
+  NotificationsActive,
+  Search,
+} from "@material-ui/icons";
 import { Avatar } from "@material-ui/core";
-import Bell from "../../Assets/Bell";
+// import Bell from "../../Assets/Bell";
 
 const Header = () => {
   return (
@@ -18,7 +21,7 @@ const Header = () => {
       </div>
       <div className="header__container">
         <div className="header__search">
-          <SearchIcon />
+          <Search />
           <input
             type="text"
             name="search"
@@ -28,11 +31,13 @@ const Header = () => {
       </div>
       <div className="header__container">
         <div className="header__nav-items">
-          <NotificationsActiveIcon className="nav-item noti__svg" />
+          <NotificationsActive className="nav-item noti__svg" />
           {/* <Bell className="nav-item bell__svg" /> */}
-          <ForumIcon className="nav-item chat__svg" />
+          <Forum className="nav-item chat__svg" />
           <div className="header__nav-items__avatar nav-item">
-            <Avatar className="" />
+            <Avatar className="header__avatar" />
+            <span>Micheal P.</span>
+            <ExpandMore />
           </div>
         </div>
       </div>
