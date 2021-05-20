@@ -11,10 +11,12 @@ import Payments from "../../Assets/Payments";
 import Reports from "../../Assets/Reports";
 import Settings from "../../Assets/Settings";
 const SidePannel = () => {
-  $(".sidepanel__link").on("click", function () {
+  $(".sidepanel a div").on("click", function () {
+    console.log("Sidepanel Trigger");
     $(".sidepanel__link").removeClass("active");
     $(this).addClass("active");
   });
+
   return (
     <div className="sidepanel">
       <Router>
@@ -23,49 +25,41 @@ const SidePannel = () => {
             <Home className="sidepanel__link__icon" /> Dashboards
           </div>
         </Link>
-        <br />
         <Link to="/">
           <div className="sidepanel__link">
             <Tutor /> Tutors
           </div>
         </Link>
-        <br />
         <Link to="/">
           <div className="sidepanel__link">
             <Students /> Students
           </div>
         </Link>
-        <br />
         <Link to="/projects">
           <div className="sidepanel__link">
             <Projects /> Projects
           </div>
         </Link>
-        <br />
         <Link to="/">
           <div className="sidepanel__link">
             <Accounts /> Acoounts
           </div>
         </Link>
-        <br />
         <Link to="/">
           <div className="sidepanel__link">
             <Payments /> Payments
           </div>
         </Link>
-        <br />
         <Link to="/">
           <div className="sidepanel__link">
             <Reports /> Reports
           </div>
         </Link>
-        <br />
         <Link to="/">
           <div className="sidepanel__link">
             <Settings /> Settings
           </div>
         </Link>
-        <br />
       </Router>
     </div>
   );
