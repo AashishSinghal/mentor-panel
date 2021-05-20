@@ -26,8 +26,9 @@
 
 .sidepanel .sidepanel__link.active {
   background-color: rgb(254, 250, 239);
-  color: rgb(135, 183, 158);
+  color: #189470;
   border-left: 5px solid #f5c637;
+  font-weight: 700;
 }
 .sidepanel__link__icon {
   padding: 10px;
