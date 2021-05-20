@@ -11,4 +11,5 @@
 
 .viewport {
   padding: 25px;
+  flex: auto;
 }
