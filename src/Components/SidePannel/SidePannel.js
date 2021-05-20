@@ -2,14 +2,16 @@ import React from "react";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import $ from "jquery";
 import "./SidePannel.css";
-import Home from "../../Assets/Home";
-import Tutor from "../../Assets/Tutor";
-import Projects from "../../Assets/Projects";
-import Accounts from "../../Assets/Accounts";
-import Students from "../../Assets/Students";
-import Payments from "../../Assets/Payments";
-import Reports from "../../Assets/Reports";
-import Settings from "../../Assets/Settings";
+import {
+  HomeIcon,
+  TutorIcon,
+  ProjectsIcon,
+  AccountsIcon,
+  StudentsIcon,
+  PaymentsIcon,
+  ReportsIcon,
+  SettingsIcon,
+} from "../../Assets/svg.js";
 const SidePannel = () => {
   $(".sidepanel a div").on("click", function () {
     console.log("Sidepanel Trigger");
@@ -22,42 +24,42 @@ const SidePannel = () => {
       <Router>
         <Link to="/dashboard">
           <div className="sidepanel__link active">
-            <Home className="sidepanel__link__icon" /> Dashboards
+            <HomeIcon className="sidepanel__link__icon" /> Dashboards
           </div>
         </Link>
         <Link to="/">
           <div className="sidepanel__link">
-            <Tutor /> Tutors
+            <TutorIcon /> Tutors
           </div>
         </Link>
         <Link to="/">
           <div className="sidepanel__link">
-            <Students /> Students
+            <StudentsIcon /> Students
           </div>
         </Link>
         <Link to="/projects">
           <div className="sidepanel__link">
-            <Projects /> Projects
+            <ProjectsIcon /> Projects
           </div>
         </Link>
         <Link to="/">
           <div className="sidepanel__link">
-            <Accounts /> Acoounts
+            <AccountsIcon /> Acoounts
           </div>
         </Link>
         <Link to="/">
           <div className="sidepanel__link">
-            <Payments /> Payments
+            <PaymentsIcon /> Payments
           </div>
         </Link>
         <Link to="/">
           <div className="sidepanel__link">
-            <Reports /> Reports
+            <ReportsIcon /> Reports
           </div>
         </Link>
         <Link to="/">
           <div className="sidepanel__link">
-            <Settings /> Settings
+            <SettingsIcon /> Settings
           </div>
         </Link>
       </Router>
