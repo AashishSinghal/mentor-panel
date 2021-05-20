@@ -7,6 +7,7 @@ import {
   NotificationsActiveOutlined,
   Search,
 } from "@material-ui/icons";
+import Profile from "../../Assets/avatar.jpg";
 import { Avatar } from "@material-ui/core";
 
 const Header = () => {
@@ -34,11 +35,9 @@ const Header = () => {
           <div className="header__nav-items__avatar nav-item">
             <Avatar
               alt="Profile Picture"
-              src="../../Assets/avatar.jpg"
+              src={Profile}
               className="header__avatar"
-            >
-              M
-            </Avatar>
+            />
             <span>Micheal P.</span>
             <ExpandMore />
           </div>

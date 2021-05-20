@@ -139,10 +139,10 @@ const Projects = () => {
         </div>
       </div>
       <br />
-      <div className="project__summary">
+      <div className="projects__summary">
         <TableContainer component={Paper}>
           <Table className={classes.table} aria-label="simple table">
-            <TableHead>
+            <TableHead className="thead">
               <TableRow>
                 <TableCell>Dessert (100g serving)</TableCell>
                 <TableCell align="right">Calories</TableCell>

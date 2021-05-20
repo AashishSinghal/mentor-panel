@@ -24,3 +24,7 @@
 .projects .projects__summary {
   text-align: left;
 }
+
+.projects .projects__summary .MuiTableHead-root {
+  background-color: #f5f6fa;
+}
