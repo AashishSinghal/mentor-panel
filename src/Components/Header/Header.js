@@ -3,12 +3,11 @@ import "./Header.css";
 import Logo from "../../Assets/tmm__logo.png";
 import {
   ExpandMore,
-  Forum,
-  NotificationsActive,
+  ForumOutlined,
+  NotificationsActiveOutlined,
   Search,
 } from "@material-ui/icons";
 import { Avatar } from "@material-ui/core";
-// import Bell from "../../Assets/Bell";
 
 const Header = () => {
   return (
@@ -17,7 +16,6 @@ const Header = () => {
         <div className="header__logo">
           <img src={Logo} alt="logo" />
         </div>
-        {/* <div className="header__vl"></div> */}
       </div>
       <div className="header__container">
         <div className="header__search">
@@ -31,11 +29,16 @@ const Header = () => {
       </div>
       <div className="header__container">
         <div className="header__nav-items">
-          <NotificationsActive className="nav-item noti__svg" />
-          {/* <Bell className="nav-item bell__svg" /> */}
-          <Forum className="nav-item chat__svg" />
+          <NotificationsActiveOutlined className="nav-item noti__svg" />
+          <ForumOutlined className="nav-item chat__svg" />
           <div className="header__nav-items__avatar nav-item">
-            <Avatar className="header__avatar" />
+            <Avatar
+              alt="Profile Picture"
+              src="../../Assets/avatar.jpg"
+              className="header__avatar"
+            >
+              M
+            </Avatar>
             <span>Micheal P.</span>
             <ExpandMore />
           </div>
