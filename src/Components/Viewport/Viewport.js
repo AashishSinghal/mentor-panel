@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Projects from "./Projects/Projects";
 
 const Viewport = () => {
   return (
@@ -7,7 +8,9 @@ const Viewport = () => {
       <Router>
         <Switch>
           <Route path="/dashboard">{/* <Dashboard/> */}</Route>
-          <Route path="/projects">{/* <Projects/> */}</Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
           <Route path=""></Route>
         </Switch>
       </Router>

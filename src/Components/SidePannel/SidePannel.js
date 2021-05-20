@@ -1,18 +1,20 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { BrowserRouter as Router, Link } from "react-router-dom";
+import $ from "jquery";
 import "./SidePannel.css";
 import Home from "../../Assets/Home";
 import Tutor from "../../Assets/Tutor";
-// import Student from "../../../Assets/suitcase.png"
 import Projects from "../../Assets/Projects";
 import Accounts from "../../Assets/Accounts";
 import Students from "../../Assets/Students";
 import Payments from "../../Assets/Payments";
 import Reports from "../../Assets/Reports";
 import Settings from "../../Assets/Settings";
-import { BrowserRouter as Router, Link } from "react-router-dom";
 const SidePannel = () => {
+  $(".sidepanel__link").on("click", function () {
+    $(".sidepanel__link").removeClass("active");
+    $(this).addClass("active");
+  });
   return (
     <div className="sidepanel">
       <Router>
