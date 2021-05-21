@@ -1,9 +1,13 @@
 import React from "react";
+import CurrentlyRunning from "./CurrentlyRunning./CurrentlyRunning";
 
 const Dashboard = () => {
   return (
     <div className="dashboard">
-      <h1>Hello Dashboard</h1>
+      <p className="dashboard_analytics_main_head">Analytics Overview</p>
+      <div>
+          <CurrentlyRunning/>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,15 @@
+.currentlyRunning{
+    width: 70%;
+    display: flex;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 15px;
+}
+.currentlyRunning_name{
+    font-weight: 500;
+}
+.currentlyRunning_proj_num_span{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: blue;
+}
