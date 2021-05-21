@@ -1,0 +1,30 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  width: inherit;
+  background-color: #fff;
+  border-radius: 5px;
+  /* font-family: "Roboto"; */
+}
+
+.projects .projects__header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects .projects__filter {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.projects .projects__summary {
+  text-align: left;
+}
+
+.projects .projects__summary .MuiTableHead-root {
+  background-color: #f5f6fa;
+}

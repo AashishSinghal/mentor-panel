@@ -74,12 +74,13 @@
 .header__nav-items .nav-item {
   height: 45px;
   margin: 0px auto;
+  fill: #5e6462;
 }
-.header__nav-items .nav-item .noti__svg,
-.header__nav-items .nav-item .chat__svg {
+/* .header__nav-items .MuiIcon-root {
   width: 32px;
-  /* height: 32px; */
-}
+  fill: #5e6462;
+  height: 32px;
+} */
 
 .header__nav-items__avatar {
   display: flex;

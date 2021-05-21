@@ -8,10 +8,10 @@ const Viewport = () => {
     <div class="viewport">
       <Router>
         <Switch>
-          <Route exact path="/dashboard">
+          <Route path="/dashboard">
             <Dashboard />
           </Route>
-          <Route exact path="/projects">
+          <Route path="/projects">
             <Projects />
           </Route>
           <Route path=""></Route>
