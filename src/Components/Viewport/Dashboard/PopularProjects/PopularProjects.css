@@ -1,0 +1,49 @@
+.popularProjects{
+    display: flex;
+}
+.popularProjects_card1{
+    background-color: white;
+    border-radius: 15px;
+    width: 27%;
+    margin: 1rem;
+    padding: 1rem 2rem;
+}
+.popularProject_card1_type{
+    display: flex;
+    margin: .7rem;
+}
+.popularProject_card1_type_letter{
+    color: white;
+    font-weight: 700;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(248,203,70);
+    padding: .8rem .8rem 1.2rem 1.2rem;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+.popularProject_card1_type_letter:last-child{
+    background-color: green;
+}
+.popularProject_card1_type_name{
+    padding: 0 0 0 .7rem
+}
+.popularProject_card1_type_name_p{
+    margin: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.popularProject_card1_type_name_num{
+    color: grey;
+    margin: -3px 0 0 .7rem;
+    font-size: .7rem;
+}
+.popularProjects_card1_button{
+    border: none;
+    height: 1.3rem;
+    border-radius: 12px;
+    font-size: .7rem;
+    padding: 0 .6rem;
+    color: grey;
+    margin-left: auto;
+}
