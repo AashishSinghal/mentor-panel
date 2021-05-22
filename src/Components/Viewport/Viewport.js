@@ -6,17 +6,15 @@ import Projects from "./Projects/Projects";
 const Viewport = () => {
   return (
     <div class="viewport">
-      <Router>
-        <Switch>
-          <Route path="/dashboard">
-            <Dashboard />
-          </Route>
-          <Route path="/projects">
-            <Projects />
-          </Route>
-          <Route path=""></Route>
-        </Switch>
-      </Router>
+      <Switch>
+        <Route path="/dashboard">
+          <Dashboard />
+        </Route>
+        <Route path="/projects">
+          <Projects />
+        </Route>
+        <Route path=""></Route>
+      </Switch>
     </div>
   );
 };

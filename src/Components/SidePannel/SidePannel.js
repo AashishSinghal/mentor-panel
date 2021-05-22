@@ -13,56 +13,54 @@ import {
   SettingsIcon,
 } from "../../Assets/svg.js";
 const SidePannel = () => {
-  $(".sidepanel a div").on("click", function () {
-    console.log("Sidepanel Trigger");
-    $(".sidepanel__link").removeClass("active");
-    $(this).addClass("active");
-  });
+  const handleSidepanelChange = () => {
+    console.log(this);
+  };
 
   return (
     <div className="sidepanel">
-      <Router>
-        <Link to="/dashboard">
-          <div className="sidepanel__link active">
-            <HomeIcon className="sidepanel__link__icon" /> Dashboards
-          </div>
-        </Link>
-        <Link to="/">
-          <div className="sidepanel__link">
-            <TutorIcon /> Tutors
-          </div>
-        </Link>
-        <Link to="/">
-          <div className="sidepanel__link">
-            <StudentsIcon /> Students
-          </div>
-        </Link>
-        <Link to="/projects">
-          <div className="sidepanel__link">
-            <ProjectsIcon /> Projects
-          </div>
-        </Link>
-        <Link to="/">
-          <div className="sidepanel__link">
-            <AccountsIcon /> Acoounts
-          </div>
-        </Link>
-        <Link to="/">
-          <div className="sidepanel__link">
-            <PaymentsIcon /> Payments
-          </div>
-        </Link>
-        <Link to="/">
-          <div className="sidepanel__link">
-            <ReportsIcon /> Reports
-          </div>
-        </Link>
-        <Link to="/">
-          <div className="sidepanel__link">
-            <SettingsIcon /> Settings
-          </div>
-        </Link>
-      </Router>
+      {/* <Router> */}
+      <Link to="/dashboard">
+        <div className="sidepanel__link active" onClick={handleSidepanelChange}>
+          <HomeIcon className="sidepanel__link__icon" /> Dashboards
+        </div>
+      </Link>
+      <Link to="/">
+        <div className="sidepanel__link">
+          <TutorIcon /> Tutors
+        </div>
+      </Link>
+      <Link to="/">
+        <div className="sidepanel__link">
+          <StudentsIcon /> Students
+        </div>
+      </Link>
+      <Link to="/projects">
+        <div className="sidepanel__link">
+          <ProjectsIcon /> Projects
+        </div>
+      </Link>
+      <Link to="/">
+        <div className="sidepanel__link">
+          <AccountsIcon /> Acoounts
+        </div>
+      </Link>
+      <Link to="/">
+        <div className="sidepanel__link">
+          <PaymentsIcon /> Payments
+        </div>
+      </Link>
+      <Link to="/">
+        <div className="sidepanel__link">
+          <ReportsIcon /> Reports
+        </div>
+      </Link>
+      <Link to="/">
+        <div className="sidepanel__link">
+          <SettingsIcon /> Settings
+        </div>
+      </Link>
+      {/* </Router> */}
     </div>
   );
 };
