@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import $ from "jquery";
 import "./SidePannel.css";
 import {
@@ -13,15 +13,30 @@ import {
   SettingsIcon,
 } from "../../Assets/svg.js";
 const SidePannel = () => {
-  const handleSidepanelChange = () => {
-    console.log(this);
-  };
+  // const handleSidepanelChange = (e) => {
+  //   e.preventDefault();
+  //   $(".sidepanel__link").removeClass("active");
+  //   // console.log(this, e); 
+  //   // var item = e.target;
+  //   // if (item.classList.contains("active")) {
+  //   //   console.log(item.classList.contains("active"));
+  //   // } else {
+  //   //   item.classList.push("active");
+  //   // }
+  // };
+  $(".sidepanel__link").on("click", function () {
+    console.log("Sidepanel Trigger");
+    $(".sidepanel__link").removeClass("active");
+    $(this).addClass("active");
+  });
 
   return (
     <div className="sidepanel">
-      {/* <Router> */}
       <Link to="/dashboard">
-        <div className="sidepanel__link active" onClick={handleSidepanelChange}>
+        <div
+          className="sidepanel__link active"
+          // onClick={(e) => handleSidepanelChange(e)}
+        >
           <HomeIcon className="sidepanel__link__icon" /> Dashboards
         </div>
       </Link>
@@ -60,7 +75,6 @@ const SidePannel = () => {
           <SettingsIcon /> Settings
         </div>
       </Link>
-      {/* </Router> */}
     </div>
   );
 };

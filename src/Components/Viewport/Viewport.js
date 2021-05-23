@@ -1,11 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Dashboard from "./Dashboard/Dashboard";
 import Projects from "./Projects/Projects";
 
 const Viewport = () => {
   return (
-    <div class="viewport">
+    <div className="viewport">
       <Switch>
         <Route path="/dashboard">
           <Dashboard />
