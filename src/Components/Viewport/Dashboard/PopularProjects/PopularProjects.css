@@ -9,6 +9,22 @@
     margin: 1rem;
     padding: 1rem 1rem;
 }
+.popularProjects_card1_P:hover{
+    box-shadow: 0 4px 18px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 19%);
+    padding: .7rem;
+    margin: .7rem 0 !important;
+    border-radius: 14px;
+}
+.popularProjects_card1_T{
+    box-shadow: 0 4px 18px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 19%);
+    padding: .7rem;
+    margin: .7rem 0 !important;
+    border-radius: 14px;
+}
+.popularProjects_card1_T .popularProjects_card1_button{
+background-color: rgb(75,153,123);
+color: white;
+}
 .popularProject_card1_type{
     display: flex;
     margin: .7rem;
@@ -18,13 +34,21 @@
     font-weight: 700;
     width: 15px;
     height: 15px;
-    background-color: rgb(248,203,70);
     padding: .8rem .8rem 1.2rem 1.2rem;
     border-radius: 15px;
     font-size: 1rem;
 }
-.popularProjects_card1 .popularProjects_card1_type:first-child{
-    border: 1px solid black;
+.P{
+    background-color: rgb(254,203,68);
+}
+.T{
+    background-color:rgb(244,133,68);
+}
+.A{
+    background-color:rgb(136,246,35);
+}
+.C{
+    background-color:rgb(70,249,202);
 }
 .popularProject_card1_type_name{
     padding: 0 0 0 .7rem
@@ -47,4 +71,48 @@
     padding: 0 .6rem;
     color: grey;
     margin-left: auto;
+}
+.popularProject_card2{
+    background-color: white;
+    width: 32%;
+    margin-top: 1rem;
+    border-radius: 15px;
+    height: 11rem;
+}
+.popularProject_monthlyProgress_head{
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 1rem 1rem 0 1rem;
+}
+.popularProject_monthlyProgress_num{
+    font-size: .8rem;
+    margin: 0 1rem 1rem 1rem;
+    color: grey;
+}
+.popularProject_couter_cards_total_text{
+    font-size: .8rem;
+    font-weight: 500;
+    margin: .8rem 1rem 0 1rem;
+}
+.popularProject_couter_cards_total_num{
+    color: white;
+    font-size: 2.2rem;
+    padding: 0 0 0 1rem;
+    margin: 0px;
+    font-weight: 700;
+    width: fit-content;
+}
+.popularProject_couter_cards_view_btn1{
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(238,209,128);
+    padding: 0 7px;
+    margin: 12px;
+}
+.popularProject_couter_cards_view_btn2{
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(128,181,159);
+    padding: 0 7px;
+    margin: 12px;
 }
