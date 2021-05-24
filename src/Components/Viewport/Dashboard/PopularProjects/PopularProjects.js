@@ -13,13 +13,27 @@ const projectTypeData = [
     projectType("C","Coaches"),
 ];
 
+
+function projectPerson(avatar, personName) {
+    return {avatar, personName};
+  }
+  
+
+const projectPersonData = [
+    projectPerson("K","Kim John"),
+    projectPerson("M","Micheal Jim"),
+    projectPerson("S","Sophie"),
+    projectPerson("E","Ellisa"),
+    projectPerson("M","Misey"),
+];
+
 const PopularProjects = () => {
     return (
         <div className="popularProjects">
             <div className="popularProjects_card1">
                 {projectTypeData.map((type)=> (
                     <div className="popularProject_card1_type">
-                        <div className="popularProject_card1_type_letter">
+                        <div className={`popularProject_card1_type_letter ${type.name}`}>
                             {type.caps}
                         </div>
                         <div className="popularProject_card1_type_name">
@@ -27,6 +41,20 @@ const PopularProjects = () => {
                             <p className="popularProject_card1_type_name_num">14+ projects</p>
                         </div>
                         <button className="popularProjects_card1_button">view all</button>
+                    </div>
+                ))}
+            </div>
+            <div className="popularProjects_card1">
+                {projectPersonData.map((type)=> (
+                    <div className="popularProject_card1_type">
+                        <div className="popularProject_card1_type_letter">
+                            {type.avatar}
+                        </div>
+                        <div className="popularProject_card1_type_name">
+                            <p className="popularProject_card1_type_name_p">{type.personName}</p>
+                            <p className="popularProject_card1_type_name_num">40+ projects Completed</p>
+                        </div>
+                        <button className="popularProjects_card1_button">view</button>
                     </div>
                 ))}
             </div>

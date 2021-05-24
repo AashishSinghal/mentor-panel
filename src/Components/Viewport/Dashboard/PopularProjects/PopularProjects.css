@@ -1,12 +1,13 @@
 .popularProjects{
     display: flex;
+    justify-content: space-between;
 }
 .popularProjects_card1{
     background-color: white;
     border-radius: 15px;
     width: 27%;
     margin: 1rem;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
 }
 .popularProject_card1_type{
     display: flex;
@@ -22,8 +23,8 @@
     border-radius: 15px;
     font-size: 1rem;
 }
-.popularProject_card1_type_letter:last-child{
-    background-color: green;
+.popularProjects_card1 .popularProjects_card1_type:first-child{
+    border: 1px solid black;
 }
 .popularProject_card1_type_name{
     padding: 0 0 0 .7rem
