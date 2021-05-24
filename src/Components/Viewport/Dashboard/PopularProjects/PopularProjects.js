@@ -1,16 +1,15 @@
-import React from 'react'
-import "./PopularProjects.css"
+import React from "react";
+import "./PopularProjects.css";
 
 function projectType(caps, name) {
-    return { caps, name };
-  }
-  
+  return { caps, name };
+}
 
 const projectTypeData = [
-    projectType("P","Projects"),
-    projectType("T","Tutors"),
-    projectType("A","Assigments"),
-    projectType("C","Coaches"),
+  projectType("P", "Projects"),
+  projectType("T", "Tutors"),
+  projectType("A", "Assigments"),
+  projectType("C", "Coaches"),
 ];
 
 
@@ -32,7 +31,7 @@ const PopularProjects = () => {
         <div className="popularProjects">
             <div className="popularProjects_card1">
                 {projectTypeData.map((type)=> (
-                    <div className="popularProject_card1_type">
+                    <div key={type.name} className="popularProject_card1_type">
                         <div className={`popularProject_card1_type_letter ${type.name}`}>
                             {type.caps}
                         </div>
@@ -46,7 +45,7 @@ const PopularProjects = () => {
             </div>
             <div className="popularProjects_card1">
                 {projectPersonData.map((type)=> (
-                    <div className="popularProject_card1_type">
+                    <div key={type.personName} className="popularProject_card1_type">
                         <div className="popularProject_card1_type_letter">
                             {type.avatar}
                         </div>
@@ -62,4 +61,4 @@ const PopularProjects = () => {
     )
 }
 
-export default PopularProjects
+export default PopularProjects;

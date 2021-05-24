@@ -7,9 +7,9 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <p className="dashboard_analytics_main_head">Analytics Overview</p>
-          <CurrentlyRunning/>
-          <p className="dashboard_analytics_main_head">Popular Projects</p>
-          <PopularProjects/>
+      <CurrentlyRunning />
+      <p className="dashboard_analytics_main_head">Popular Projects</p>
+      <PopularProjects />
     </div>
   );
 };

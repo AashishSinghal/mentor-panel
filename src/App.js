@@ -1,3 +1,4 @@
+import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
 import Header from "./Components/Header/Header";
 import SidePannel from "./Components/SidePannel/SidePannel";
@@ -8,8 +9,10 @@ function App() {
     <div className="App">
       <Header />
       <div className="main-container">
-        <SidePannel />
-        <Viewport />
+        <Router>
+          <SidePannel />
+          <Viewport />
+        </Router>
       </div>
     </div>
   );
